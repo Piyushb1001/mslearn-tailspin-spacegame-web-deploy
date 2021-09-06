@@ -12,8 +12,8 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-    
-      vmImage: 'ubuntu-20.04'
+      name : 'PrivateAgentPool'
+      vmImage: 'windows-latest'
       demands:
       - npm
 
